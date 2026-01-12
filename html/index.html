@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div id="pager" style="display: none">
+      <img src="assets/images/pager.png" class="pager-img" />
+
+      <div class="screen" id="messageScreen">
+        <p id="pagerIdDisplay">ID: ---</p>
+        <p id="messageDisplay">No messages</p>
+        <button id="toggleScreen"></button>
+        <button id="toggleScreen2"></button>
+      </div>
+
+      <p id="messageCounter">0/0</p>
+      <button id="prevMessage"></button>
+      <button id="nextMessage"></button>
+      <button id="closeButton"></button>
+
+      <div class="screen2" id="sendScreen" style="display: none">
+        <input
+          type="text"
+          id="messageInput"
+          class="messageInput"
+          placeholder="Your message"
+          maxlength="15"
+        />
+        <input
+          type="number"
+          id="targetPagerId"
+          class="targetPagerId"
+          placeholder="Recipient ID"
+          maxlength="5"
+        />
+        <button id="sendButton"></button>
+      </div>
+
+      <div class="screen2" id="contactScreen" style="display: none">
+        <button id="saveContactButton"></button>
+        <button id="saveContactButton2"></button>
+        <button id="deleteContactButton"></button>
+        <input type="text" id="saveContactName" class="messageInput""
+        placeholder="Contact name" maxlength="15">
+        <input
+          type="number"
+          id="saveContactNumber"
+          class="targetPagerId"
+          placeholder="Recipient ID"
+          maxlength="5"
+        />
+
+        <div id="contactsList" class="contacts-List"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

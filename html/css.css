@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100vh;
+  margin: 0;
+  user-select: none;
+}
+
+#pager {
+  display: none;
+  position: fixed;
+  bottom: -31.25rem;
+  right: 2.5rem;
+  width: 18.75rem;
+  height: 31.25rem;
+  background-color: transparent;
+  border-radius: 0.625rem;
+  text-align: center;
+  padding: 0.9375rem;
+  transition: bottom 0.5s ease-in-out;
+}
+
+.pager-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.screen {
+  position: absolute;
+  top: 4.375rem;
+  left: 1.875rem;
+  width: 15rem;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(25, 44, 24);
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+
+.screen2 {
+  position: relative;
+  top: 14%;
+  left: 10%;
+  width: 80%;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(25, 44, 24);
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+
+#pagerIdDisplay {
+  position: absolute;
+  left: 4%;
+}
+
+#messageDisplay {
+  position: absolute;
+  left: 5%;
+  top: 200%;
+  width: 92%;
+  height: 230%;
+  max-width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  text-align: left;
+  line-height: 1.2;
+}
+
+input,
+button {
+  width: 90%;
+  margin: 0.3125rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#toggleScreen {
+  position: absolute;
+  bottom: -850%;
+  left: 95%;
+  transform: translateX(-10%);
+  width: 10%;
+  height: 200%;
+  font-size: 1rem;
+  padding: 0.625rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+#toggleScreen2 {
+  position: absolute;
+  bottom: -850%;
+  left: 55%;
+  transform: translateX(-10%);
+  width: 10%;
+  height: 200%;
+  font-size: 1rem;
+  padding: 0.625rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+#sendButton {
+  position: absolute;
+  left: 100%;
+  transform: translateY(-10%);
+  bottom: -180%;
+  width: 10%;
+  height: 250%;
+  font-size: 1rem;
+  padding: 0.625rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  z-index: 1010101010;
+}
+
+.targetPagerId {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 52%;
+  position: absolute;
+  top: 0.5rem;
+  left: 62.5%;
+  height: 140%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  color: rgb(25, 44, 24);
+  border: 0.125rem solid rgb(25, 44, 24);
+  border-bottom: transparent;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.3125rem;
+}
+
+.targetPagerId::placeholder {
+  color: rgb(25, 44, 24);
+  opacity: 1;
+}
+
+.targetPagerId:focus {
+  outline: none;
+  border: 0.125rem solid rgb(25, 44, 24);
+}
+
+.messageInput {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 89%;
+  position: absolute;
+  top: 3rem;
+  left: 44%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  color: rgb(25, 44, 24);
+  border: 0.125rem solid rgb(25, 44, 24);
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.3125rem;
+}
+
+.messageInput::placeholder {
+  color: rgb(25, 44, 24);
+  opacity: 1;
+}
+
+.messageInput:focus {
+  outline: none;
+  border: 0.125rem solid rgb(25, 44, 24);
+}
+
+#messageCounter {
+  position: absolute;
+  font-size: 1rem;
+  text-align: center;
+  top: 15%;
+  left: 75%;
+}
+
+#prevMessage {
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  width: 15%;
+  height: 5%;
+  left: 63%;
+  top: 37%;
+  border: none;
+}
+
+#nextMessage {
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  width: 15%;
+  height: 5%;
+  left: 63%;
+  top: 43%;
+  border: none;
+}
+
+#closeButton {
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  width: 6%;
+  height: 12%;
+  left: 95%;
+  top: 32%;
+  border: none;
+}
+
+#saveContactButton {
+  position: absolute;
+  background-color: transparent;
+  font-family: "Orbitron", sans-serif;
+  left: -4%;
+  transform: translateY(-10%);
+  top: 180%;
+  border-bottom-left-radius: 10%;
+  max-width: 35%;
+  text-wrap: pretty;
+  height: auto;
+  font-size: 0.7rem;
+  padding: 0.625rem;
+  cursor: pointer;
+  border: 0.125rem solid rgb(25, 44, 24);
+  z-index: 1010101010;
+}
+
+#saveContactButton2 {
+  position: absolute;
+  background-color: transparent;
+  font-family: "Orbitron", sans-serif;
+  left: 1%;
+  transform: translateY(220%);
+  top: 300%;
+  width: 15%;
+  text-wrap: pretty;
+  height: auto;
+  font-size: 0.7rem;
+  padding: 0.625rem;
+  cursor: pointer;
+  border: transparent;
+  z-index: 1010101010;
+}
+
+#deleteContactButton {
+  position: absolute;
+  background-color: transparent;
+  font-family: "Orbitron", sans-serif;
+  left: 20%;
+  transform: translateY(220%);
+  top: 300%;
+  width: 15%;
+  text-wrap: pretty;
+  height: auto;
+  font-size: 0.7rem;
+  padding: 0.625rem;
+  cursor: pointer;
+  border: transparent;
+  z-index: 1010101010;
+}
+
+.contacts-List {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  width: 45%;
+  height: 3.4rem;
+
+  overflow-y: auto;
+  border: 0.125rem solid rgb(25, 44, 24);
+  padding: 1vh 1vw;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-align: left;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.contacts-List div {
+  margin-bottom: 1vh;
+  cursor: pointer;
+}
+.contacts-List::-webkit-scrollbar {
+  display: none;
+}
+
+.selected-contact {
+  font-weight: bold;
+}
+
+#toggleScreen:focus,
+#toggleScreen2:focus,
+#prevMessage:focus,
+#nextMessage:focus,
+#saveContactButton:focus,
+#saveContactButton2:focus,
+#deleteContactButton:focus,
+#closeButton:focus,
+#sendButton:focus {
+  outline: none;
+}
+
+#saveContactName,
+#saveContactNumber {
+  display: none;
+}
