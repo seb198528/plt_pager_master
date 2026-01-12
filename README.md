@@ -1,13 +1,18 @@
-# 📟 plt_pager_master
+
+# plt_pager_master
+
+[![Repo Size](https://img.shields.io/github/repo-size/seb198528/plt_pager_master?style=flat-square)](https://github.com/seb198528/plt_pager_master)
+[![Last Commit](https://img.shields.io/github/last-commit/seb198528/plt_pager_master?style=flat-square)](https://github.com/seb198528/plt_pager_master/commits/main)
+[![Issues](https://img.shields.io/github/issues/seb198528/plt_pager_master?style=flat-square)](https://github.com/seb198528/plt_pager_master/issues)
 
 Système de pager (bipeur) réaliste pour QBCore FiveM.
 
 ## ✨ Fonctionnalités
-- Envoi de messages discrets entre membres d'un même job
-- Notifications visuelles et sonores
-- Commandes simples : `/pager [message]`, `/checkpager`
-- Compatible police, EMS, mécanos, etc.
-- Léger et sans dépendance lourde
+- Réception de messages texte discrets
+- Intégration automatique avec les jobs (police, EMS, mécanos…)
+- Notifications sonores et visuelles
+- Commandes RP : `/pager [message]`, `/checkpager`
+- Compatible avec tous les frameworks QBCore
 
 ## 📥 Installation
 1. Place le dossier `plt_pager_master` dans `resources/`
